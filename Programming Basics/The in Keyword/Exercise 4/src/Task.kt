@@ -6,9 +6,9 @@ package theInKeywordExercise4
 fun isValidIdentifier(s: String): Boolean {
 
     if (s.isEmpty()) return false
-    if (s[0] !in "_" && s[0] !in 'a'..'z'  ) return false
+    if (s[0] !in "_" && s[0] !in 'a'..'z' && s[0] !in 'A'..'Z'  ) return false
     for (i in s){
-        if (i !in "_" && i !in 'a'..'z' && i !in '0'..'9'  ) return false
+        if (i !in "_" && i !in 'a'..'z' && i !in 'A'..'Z' && i !in '0'..'9'  ) return false
     }
 
 
