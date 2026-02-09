@@ -5,7 +5,13 @@ fun countDigits(number: Int, digit: Int): Int {
   var worker = number
   var occurrences = 0
   while (worker > 0) {
-    TODO()
+      val currentDigit = worker % 10  // Get the last digit
+
+      if (currentDigit == digit) {  // Compare the digit itself
+          occurrences++
+      }
+
+      worker /= 10  // Remove the last digit
   }
   return occurrences
 }
