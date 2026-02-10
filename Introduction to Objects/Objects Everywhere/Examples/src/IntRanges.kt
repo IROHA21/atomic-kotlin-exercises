@@ -5,6 +5,8 @@ fun main() {
   val r2 = IntRange(5, 7)
   println(r1)
   println(r2)
+
+    println(r1.sum())
 }
 /* Output:
 0..10
